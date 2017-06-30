@@ -100,8 +100,8 @@
             
             <div class="col-sm-3" >
                 <p class="lead">Contact Us</p>
-                <input class="form-control" type="text" id="name1" name="name" placeholder="Your Name" />
-                <input class="form-control" type="text" id="email1"  name="email" placeholder="E-mail" />
+                <input class="form-control" type="text" id="nameText" name="name" placeholder="Your Name" />
+                <input class="form-control" type="text" id="emailText"  name="email" placeholder="E-mail" />
                 <button id="signUp" class="btn" data-toggle="modal" data-target="#myModal" >Sign Up</button>
               </div>
               
@@ -128,20 +128,20 @@
 <!--  Launch demo modal-->
 <!--</button>-->
 
-<!-- Modal -->
+
+<form method="POST" action="http://formspree.io/josmelvyH@gmail.com">
+   <!-- Modal -->
 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+
       
       <div class="modal-body">
-<form method="POST" action="http://formspree.io/josmelvyH@gmail.com">
-   <p style="color:black">Hi namcxe  thank you for signing up! We will send an email to shortly</p>
+        <p style="color:black" >HI - <span id="name"></span>thank you for signing up! We will send an email shortly </p>
 
-  <button type="submit"> Send</button>
-</form>
+  <button value="Send" type="submit"> Send</button>
+
 
 </div>
       <div class="modal-footer">
@@ -151,13 +151,14 @@
     </div>
   </div>
 </div>
+</form>
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-
+<script type="text/javascript" src="script.js"></script>
 </body>
 
 </html>
