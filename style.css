@@ -112,8 +112,9 @@ body {
         }
 
         #location-list {
-            margin-top: 75px;
+            padding-top: 75px;
             background-color: #FFFFFF;
+            height: 100%;
         }
 
         p {
@@ -248,4 +249,3 @@ body {
 .socialBox{
     
 }
-

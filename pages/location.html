@@ -51,7 +51,6 @@
     
     <!--<div class="col-sm-9">-->
       <div id="map"></div>
-      <div id="map2"></div>
     <!--</div>-->
     
     
@@ -59,29 +58,31 @@
     <script>
       var map;
       function initMap() {
-        var uluru = {lat: 40.741895, lng: -73.989308}
-         var map = new google.maps.Map(document.getElementById('map'), {
-          zoom: 3,
+        var uluru = {lat: 40.766455, lng: -73.92044440000001}
+         var uluru2 = {lat:40.703991500 , lng: 74.011091700}
+          var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 13,
           center: uluru
         });
-        var marker = new google.maps.Marker({
+          var marker = new google.maps.Marker({
           position: uluru,
-          map: map
+          map: map,
+          icon: {
+		       url: "https://image.flaticon.com/icons/png/512/9/9769.png",
+		      scaledSize: new google.maps.Size(64, 64)
+	}
+           });
+          
+          var map2 = new google.maps.Map(document.getElementById('map2'), {
+          zoom: 13,
+          center: uluru2
+            });
+          var marker2 = new google.maps.Marker({
+          position: uluru2,
+          map2: map2
         });
       }
    
-   var map2;
-      function initMap2() {
-        var uluru2 = {lat:40.703991500 , lng: 74.011091700}
-         var map2 = new google.maps.Map(document.getElementById('map2'), {
-          zoom: 3,
-          center: uluru2
-        });
-        var marker = new google.maps.Marker({
-          position: uluru2,
-          map: map
-        });
-      }
   
     </script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBJWN3KKLlUl6-LcBZVVfGKMamX_KwjbKA&callback=initMap"
